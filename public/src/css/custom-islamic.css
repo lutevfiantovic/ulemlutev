@@ -1,0 +1,164 @@
+/* =========================================
+   1. NAMA ARAB DI SAMPING FOTO MEMPELAI
+   ========================================= */
+.bride-media-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.bride-arabic-side {
+    font-family: 'Aref Ruqaa', 'Noto Naskh Arabic', serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #d4af37;
+    text-shadow: 0 0 12px rgba(243, 213, 141, 0.65);
+    line-height: 1.6;
+    direction: rtl;
+}
+
+@media (max-width: 480px) {
+    .bride-media-wrapper {
+        gap: 0.75rem;
+    }
+    .bride-arabic-side {
+        font-size: 1.65rem;
+    }
+}
+
+/* =========================================
+   2. SECTION ADAB MENGHADIRI WALIMAH
+   ========================================= */
+.adab-walimah {
+    padding: 3rem 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.adab-card {
+    background-color: #463c38;
+    color: #ffffff;
+    max-width: 460px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 28px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.adab-inner-border {
+    border: 1.5px solid #d5ab77;
+    border-radius: 22px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.arabic-glow {
+    font-family: 'Aref Ruqaa', 'Noto Naskh Arabic', serif;
+    font-size: 2.3rem;
+    color: #f6e2b3;
+    text-shadow: 0 0 15px rgba(246, 226, 179, 0.75);
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.adab-inner-border h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2.5px;
+    color: #d5ab77;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.gold-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d5ab77, transparent);
+    margin: 0 auto 1.75rem auto;
+    width: 85%;
+}
+
+.adab-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: left;
+}
+
+.adab-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #f3ece7;
+}
+
+.adab-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    background-color: #ffffff;
+    color: #463c38;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.adab-icon.no-camera {
+    border: 2.5px solid #d9383a;
+    color: #d9383a;
+}
+
+/* =========================================
+   3. DOA PENGANTIN (HR. ABU DAWUD)
+   ========================================= */
+.doa-pengantin {
+    max-width: 650px;
+    margin: 0 auto 2.5rem auto;
+    padding: 1.75rem 1.5rem;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid rgba(213, 171, 119, 0.45);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.doa-pengantin h2 {
+    margin-bottom: 1rem;
+}
+
+.arabic-doa {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: 1.65rem;
+    line-height: 2.1;
+    color: #463c38;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    direction: rtl;
+}
+
+.latin-doa {
+    font-size: 0.95rem;
+    color: #8c6d46;
+    margin-bottom: 0.65rem;
+}
+
+.arti-doa {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #555555;
+}
