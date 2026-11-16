@@ -24,12 +24,12 @@
     <meta name="twitter:description" content="Mengundang segenap kerabat dan sahabat">
     <meta name="twitter:image" content="https://ulemlutev.vercel.app/src/assets/images/couple.png">
 
-    <!-- Fonts Google -->
+   <!-- Fonts Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Naskh+Arabic:wght@400..700&family=Sacramento&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Naskh+Arabic:wght@400..700&family=Reem+Kufi:wght@400..700&family=Sacramento&display=swap"
           rel="stylesheet">
-
+    
     <!-- Box icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -52,32 +52,40 @@
     <link rel="stylesheet" href="src/css/mediaQueries.css">
 
     <style>
+        /* Menerapkan Font Reem Kufi ke semua elemen Arab */
+        [lang="ar"],
+        #bride-title,
+        footer h4,
+        .arabic-couple-caption,
+        .bride-arabic-name,
+        .doa-pengantin-box .arabic-doa,
+        .adab-walimah-card h2 {
+            font-family: 'Reem Kufi', 'Noto Naskh Arabic', sans-serif !important;
+        }
+
         .arabic-couple-caption {
-            font-family: 'Noto Naskh Arabic', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
+            font-size: 2rem;
+            font-weight: 600;
             margin-top: 0.5rem;
             direction: rtl;
         }
         .bride-arabic-name {
-            font-family: 'Noto Naskh Arabic', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
+            font-size: 1.05rem;
+            font-weight: 600;
             margin: 0.6rem 0 0.2rem 0;
             display: block;
             direction: rtl;
         }
         .doa-pengantin-box {
-            max-width: 650px;
+            max-width: 600px;
             margin: 2rem auto 0 auto;
             padding: 1.5rem;
             text-align: center;
         }
         .doa-pengantin-box .arabic-doa {
-            font-family: 'Noto Naskh Arabic', serif;
-            font-size: 1.5rem;
-            line-height: 2;
-            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 2.1;
+            font-weight: 600;
             margin-bottom: 0.5rem;
             direction: rtl;
         }
@@ -100,8 +108,8 @@
             border-radius: 16px;
         }
         .adab-walimah-card h2 {
-            font-family: 'Noto Naskh Arabic', serif;
-            font-size: 1.8rem;
+            font-size: 1.9rem;
+            font-weight: 600;
             margin-bottom: 0.25rem;
         }
         .adab-walimah-card h3 {
