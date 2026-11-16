@@ -3,25 +3,23 @@ import {renderElement} from "../utils/helper.js";
 
 export const bride = () => {
     const brideCouple = document.querySelector('.bride_couple ul');
+    const brideListItem = (data) => {
+        const arabicName = data.id === 1
+            ? 'محمّد لوطفيانطا نوكراها'
+            : 'فتحية الطيّبة';
 
-    const brideListItem = (person) => {
-        const arabicText = person.arabicName || (person.id === 1 ? 'لوتيف فيانتوفيتش' : 'توي');
-
-        return `
-        <li data-aos="zoom-in" data-aos-duration="1000">
-            <figure class="bride-figure-row">
-                <div class="bride-media-wrapper">
-                    <img src="${person.image}" alt="${person.name} animation">
-                    <span class="bride-arabic-side" lang="ar">${arabicText}</span>
-                </div>
-                <figcaption>${person.name}</figcaption>
-            </figure>
-            <p>${person.child} <br>dari <br> Bapak ${person.father} &amp; Ibu ${person.mother}</p>
-            <span class="ampersand-symbol" style="display: ${person.id === 2 ? 'none' : 'block'}">&amp;</span>
+        return `<li data-aos="zoom-in" data-aos-duration="1000">
+              <figure>
+                   <img src="${data.image}" alt="${data.name} animation">
+                   <span class="bride-arabic-name" lang="ar">${arabicName}</span>
+                   <figcaption>${data.name}</figcaption>
+              </figure>
+              <p>${data.child} <br>dari <br> Bapak ${data.father} & Ibu ${data.mother}</p>
+              <span style="display: ${data.id === 2 ? 'none' : 'block'}">&</span>
         </li>`;
     };
 
     const brideData = [data.bride.L, data.bride.P];
 
     renderElement(brideData, brideCouple, brideListItem);
-};
+}
