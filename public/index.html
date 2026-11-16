@@ -24,10 +24,10 @@
     <meta name="twitter:description" content="Mengundang segenap kerabat dan sahabat">
     <meta name="twitter:image" content="https://ulemlutev.vercel.app/src/assets/images/couple.png">
 
-   <!-- Fonts Google -->
+<!-- Fonts Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Naskh+Arabic:wght@400..700&family=Reem+Kufi:wght@400..700&family=Sacramento&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Naskh+Arabic:wght@400..700&family=Parisienne&display=swap"
           rel="stylesheet">
     
     <!-- Box icon -->
@@ -52,40 +52,52 @@
     <link rel="stylesheet" href="src/css/mediaQueries.css">
 
     <style>
-        /* Menerapkan Font Reem Kufi ke semua elemen Arab */
-        [lang="ar"],
-        #bride-title,
-        footer h4,
-        .arabic-couple-caption,
-        .bride-arabic-name,
-        .doa-pengantin-box .arabic-doa,
-        .adab-walimah-card h2 {
-            font-family: 'Reem Kufi', 'Noto Naskh Arabic', sans-serif !important;
-        }
-
+        /* Kaligrafi Arab di Welcome & Home (لوطفي و طيّبة) */
         .arabic-couple-caption {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-top: 0.5rem;
+            font-family: var(--arabic);
+            font-size: 1.65rem;
+            font-weight: 400;
+            margin-top: 0.4rem;
             direction: rtl;
         }
+
+        /* Nama Arab Mempelai di bawah foto */
         .bride-arabic-name {
-            font-size: 1rem;
-            font-weight: 300;
-            margin: 0.6rem 0 0.2rem 0;
+            font-family: var(--arabic);
+            font-size: 1.45rem;
+            font-weight: 400;
+            margin: 0.5rem 0 0.15rem 0;
             display: block;
             direction: rtl;
         }
+
+        /* Nama Latin Mempelai (di bawah nama Arab) agar tidak terlalu besar & tidak kaku */
+        .bride_couple figcaption {
+            font-family: var(--sacramento);
+            font-size: 1.85rem;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-top: 0.1rem;
+        }
+
+        /* Basmalah & Hamdalah agar tidak kaku tebal */
+        #bride-title,
+        footer h4 {
+            font-weight: 400;
+        }
+
+        /* Doa Pengantin HR. Abu Dawud */
         .doa-pengantin-box {
-            max-width: 600px;
+            max-width: 650px;
             margin: 2rem auto 0 auto;
             padding: 1.5rem;
             text-align: center;
         }
         .doa-pengantin-box .arabic-doa {
-            font-size: 1.6rem;
+            font-family: var(--arabic);
+            font-size: 1.45rem;
             line-height: 2.1;
-            font-weight: 600;
+            font-weight: 400;
             margin-bottom: 0.5rem;
             direction: rtl;
         }
@@ -93,6 +105,8 @@
             font-size: 0.9rem;
             line-height: 1.6;
         }
+
+        /* Adab Menghadiri Walimah */
         .adab-walimah-section {
             padding: 2rem 1.5rem;
             text-align: center;
@@ -108,8 +122,9 @@
             border-radius: 16px;
         }
         .adab-walimah-card h2 {
-            font-size: 1.9rem;
-            font-weight: 600;
+            font-family: var(--arabic);
+            font-size: 1.75rem;
+            font-weight: 400;
             margin-bottom: 0.25rem;
         }
         .adab-walimah-card h3 {
