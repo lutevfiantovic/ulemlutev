@@ -81,13 +81,13 @@ export const data = {
         },
         {
             id: 2,
-            name: 'Shoopepay/Dana Muhammad Lutfianto Nugroho',
-            icon: './src/assets/images/shopeedana.png',
+            name: 'Dana',
+            icon: './src/assets/images/dana.jpg',
             rekening: '088239292636'
         },
         {
             id: 3,
-            name: 'Shoopepay/Dana Muhammad Lutfianto Nugroho',
+            name: 'Shoopepay',
             icon: './src/assets/images/spay.png',
             rekening: '088239292636'
         },
