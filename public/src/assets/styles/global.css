@@ -1,13 +1,14 @@
 :root {
-    --primary-font-color: '#212529';
+    --primary-font-color: #212529;
     --bg-color: #f8f9fa;
 
     --fontSize-heading-lg: 3rem;
     --fontSize-heading-base: 2.8rem;
     --fontSize-text-base: 1rem;
 
-    --sacramento: Sacramento, cursive;
-    --arabic: 'Noto Naskh Arabic', serif;
+    /* Mengganti Sacramento menjadi Parisienne & Noto Naskh Arabic menjadi Reem Kufi */
+    --sacramento: 'Parisienne', cursive;
+    --arabic: 'Reem Kufi', sans-serif;
 
     --shadow-md: 0 0 10px rgba(0, 0, 0, 0.3);
 
@@ -71,7 +72,6 @@ p {
 .audio button.active {
     animation: rotate 3s linear infinite;
 }
-
 
 @keyframes rotate {
     0% {
