@@ -72,6 +72,8 @@ export const data = {
         }
     ],
 
+    
+    
     bank: [
         {
             id: 1,
@@ -81,7 +83,7 @@ export const data = {
         },
         {
             id: 2,
-            name: 'Shoopepay/Dana Muhammad Lutfianto Nugroho',
+            name: 'Shoopepay/Dana',
             icon: './src/assets/images/shopeedana.png',
             rekening: '088239292636'
         },
