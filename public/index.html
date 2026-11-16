@@ -51,39 +51,54 @@
     <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/mediaQueries.css">
 
-   <style>
-        /* Kaligrafi Arab di Welcome & Home (لوطفي و طيّبة) */
-        .arabic-couple-caption {
-            font-family: var(--arabic);
-            font-size: 1.65rem;
-            font-weight: 400;
-            margin-top: 0.4rem;
+  <style>
+        /* PAKSA SEMUA TEKS ARAB MENGGUNAKAN AREF RUQAA */
+        [lang="ar"],
+        .welcome figure figcaption,
+        .home figure figcaption,
+        .arabic-couple-caption,
+        #bride-title,
+        .bride h2,
+        .bride-arabic-name,
+        .doa-pengantin-box .arabic-doa,
+        .adab-walimah-card h2,
+        footer h4 {
+            font-family: 'Aref Ruqaa', serif !important;
+            font-weight: 400 !important;
             direction: rtl;
+        }
+
+        /* Nama Arab di Welcome & Home (لوطفي و طيّبة) */
+        .welcome figure figcaption,
+        .home figure figcaption,
+        .arabic-couple-caption {
+            font-size: 1.65rem !important;
+            margin-top: 0.4rem;
+            line-height: 1.6;
+        }
+
+        /* Basmalah di Section Bride */
+        #bride-title,
+        .bride h2 {
+            font-size: 1.8rem !important;
+            line-height: 1.8;
         }
 
         /* Nama Arab Mempelai di bawah foto */
         .bride-arabic-name {
-            font-family: var(--arabic);
-            font-size: 1.45rem;
-            font-weight: 400;
+            font-size: 1.45rem !important;
             margin: 0.5rem 0 0.15rem 0;
             display: block;
-            direction: rtl;
+            line-height: 1.6;
         }
 
-        /* Nama Latin Mempelai (di bawah nama Arab) agar tidak terlalu besar & tidak kaku */
+        /* Nama Latin Mempelai (Parisienne - Tidak terlalu besar & tidak tebal) */
         .bride_couple figcaption {
-            font-family: var(--sacramento);
-            font-size: 1.85rem;
-            font-weight: 400;
+            font-family: 'Parisienne', cursive !important;
+            font-size: 1.85rem !important;
+            font-weight: 400 !important;
             line-height: 1.3;
             margin-top: 0.1rem;
-        }
-
-        /* Basmalah & Hamdalah agar tidak kaku tebal */
-        #bride-title,
-        footer h4 {
-            font-weight: 400;
         }
 
         /* Doa Pengantin HR. Abu Dawud */
@@ -94,12 +109,9 @@
             text-align: center;
         }
         .doa-pengantin-box .arabic-doa {
-            font-family: var(--arabic);
-            font-size: 1.45rem;
-            line-height: 2.1;
-            font-weight: 400;
+            font-size: 1.45rem !important;
+            line-height: 2.2;
             margin-bottom: 0.5rem;
-            direction: rtl;
         }
         .doa-pengantin-box .arti-doa {
             font-size: 0.9rem;
@@ -122,10 +134,9 @@
             border-radius: 16px;
         }
         .adab-walimah-card h2 {
-            font-family: var(--arabic);
-            font-size: 1.75rem;
-            font-weight: 400;
+            font-size: 1.75rem !important;
             margin-bottom: 0.25rem;
+            line-height: 1.6;
         }
         .adab-walimah-card h3 {
             font-size: 1rem;
@@ -161,8 +172,13 @@
             align-items: center;
             justify-content: center;
         }
-    </style>
 
+        /* Hamdalah di Footer */
+        footer h4 {
+            font-size: 1.5rem !important;
+            line-height: 1.8;
+        }
+    </style>
     <title>Walimatul 'Ursy Lutev & Tooy</title>
 </head>
 <body>
