@@ -48,6 +48,18 @@ export const wishas = () => {
         });
     };
 
+    const listItemBank = (data) => {
+        const isEwallet = data.rekening.startsWith('08');
+        const labelNomor = isEwallet ? 'No. E-Wallet' : 'No. Rekening';
+        const labelTombol = isEwallet ? 'Salin Nomor' : 'Salin No. Rekening';
+
+        return `  <figure data-aos="zoom-in" data-aos-duration="1000">
+                <img src=${data.icon} alt="bank icon animation">
+                <figcaption>${labelNomor} ${data.rekening.slice(0, 4)}xxxx <br>A.n ${data.name}</figcaption>
+                <button data-rekening=${data.rekening} aria-label="copy rekening">${labelTombol}</button>
+           </figure>`;
+    };
+    
     const listItemComentar = (data) => {
         const name = formattedName(data.name);
         const newDate = formattedDate(data.date);
