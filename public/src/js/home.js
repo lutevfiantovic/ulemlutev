@@ -6,11 +6,11 @@ export const home = () => {
     const [_, figureElement, timeElement, homeTime, calendarAnchor] = homeContainer.children;
 
     const generateFigureContent = ({bride}) => {
-        const {L: {name: brideLName}, P: {name: bridePName}, couple: coupleImage} = bride;
+        const {couple: coupleImage} = bride;
         return `
             <img src="${coupleImage}" alt="couple animation">
-            <figcaption>
-                ${brideLName.split(' ')[0]} & ${bridePName.split(' ')[0]}
+            <figcaption class="arabic-couple-caption" lang="ar">
+                لوطفي و طيّبة
             </figcaption>`;
     };
 
@@ -47,7 +47,6 @@ export const home = () => {
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         if (distance < 0) {
-            clearInterval(intervalId);
             homeTime.innerHTML = generateCountdownMarkup(0, 0, 0, 0);
         } else {
             homeTime.innerHTML = generateCountdownMarkup(days, hours, minutes, seconds);
