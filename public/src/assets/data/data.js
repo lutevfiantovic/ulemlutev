@@ -80,10 +80,16 @@ export const data = {
             rekening: '778190879'
         },
         {
-            id: 2,
-            name: 'Shoopepay/Dana Muhammad Lutfianto Nugroho',
-            icon: './src/assets/images/shopeedana.png',
-            rekening: '088239292636'
+        id: 2,
+        name: 'Muhammad Lutfianto Nugroho',
+        icon: './src/assets/images/dana.jpg', // Sesuaikan dengan path file logo DANA Anda
+        rekening: '088239292636'
+        },
+        {
+        id: 3,
+        name: 'Muhammad Lutfianto Nugroho'',
+        icon: './src/assets/images/spay.png', // Sesuaikan dengan path file logo ShopeePay Anda
+        rekening: '088239292636'
         },
     ],
 
